@@ -3,3 +3,11 @@
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
+
+:root {
+  --onyx: hsla(154, 7%, 19%, 1);
+  --light-blue: hsla(189, 32%, 70%, 1);
+  --mint-green: hsla(154, 41%, 87%, 1);
+  --cordovan: hsla(1, 32%, 42%, 1);
+  --chestnut: hsla(11, 50%, 42%, 1);
+}
