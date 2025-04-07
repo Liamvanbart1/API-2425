@@ -41,6 +41,8 @@ app
 app.get("/", async (req, res) => {
   const key = process.env.API_KEY;
   const baseUrl = process.env.BASE_URL;
+  const leagueIds = [39, 140, 135, 78, 61];
+
   const endPoint = new URL("standings?league=39&season=2023", baseUrl);
 
   const response = await fetch(`${endPoint.href}`, {
