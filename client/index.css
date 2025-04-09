@@ -10,7 +10,6 @@
 @import '../server/components/card/card.css';
 
 body {
-  color: black;
   max-width: 1440px;
   margin: 0 auto;
 }

@@ -43,20 +43,20 @@ app.get("/", async (req, res) => {
   const baseUrl = process.env.BASE_URL;
   const leagueIds = [39, 140, 135, 78, 61];
 
-  const endPoint = new URL("standings?league=39&season=2023", baseUrl);
+  // const endPoint = new URL("standings?league=39&season=2023", baseUrl);
 
-  const response = await fetch(`${endPoint.href}`, {
-    method: "GET",
-    headers: {
-      "x-apisports-key": key,
-      "x-rapidapi-host": "v3.football.api-sports.io",
-    },
-  });
-  const json = await response.json();
-  if (json.errors.length) {
-    console.log("fout met de api", json.errors);
-  }
-  console.log(json);
+  // const response = await fetch(`${endPoint.href}`, {
+  //   method: "GET",
+  //   headers: {
+  //     "x-apisports-key": key,
+  //     "x-rapidapi-host": "v3.football.api-sports.io",
+  //   },
+  // });
+  // const json = await response.json();
+  // if (json.errors.length) {
+  //   console.log("fout met de api", json.errors);
+  // }
+  // console.log(json);
   return res.send(
     renderTemplate("server/views/index.liquid", {
       title: "Home",

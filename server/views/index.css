@@ -5,9 +5,12 @@
 }
 
 :root {
-  --onyx: hsla(154, 7%, 19%, 1);
-  --light-blue: hsla(189, 32%, 70%, 1);
-  --mint-green: hsla(154, 41%, 87%, 1);
-  --cordovan: hsla(1, 32%, 42%, 1);
-  --chestnut: hsla(11, 50%, 42%, 1);
+  --base-color: #2E3532;
+  --second-color: #D9D9D9;
+  --text-color: #CC6048;
+}
+
+body {
+  background-color: var(--base-color);
+  color: var(--text-color);
 }
