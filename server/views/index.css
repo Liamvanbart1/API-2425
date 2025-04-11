@@ -14,3 +14,28 @@ body {
   background-color: var(--base-color);
   color: var(--text-color);
 }
+
+.card {
+  background-color: var(--second-color);
+  color: var(--base-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.card p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}

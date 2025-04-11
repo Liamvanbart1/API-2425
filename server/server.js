@@ -38,29 +38,80 @@ app
   .use("/", sirv("dist"))
   .listen(3000, () => console.log("Server available on http://localhost:3000"));
 
+// app.get("/", async (req, res) => {
+//   const key = process.env.API_KEY;
+//   const baseUrl = process.env.BASE_URL;
+//   const leagueIds = [39, 140, 135, 78, 61];
+
+//   const endPoint = new URL("standings?league=39&season=2023", baseUrl);
+
+//   const response = await fetch(`${endPoint.href}`, {
+//     method: "GET",
+//     headers: {
+//       "x-apisports-key": key,
+//       "x-rapidapi-host": "v3.football.api-sports.io",
+//     },
+//   });
+//   const json = await response.json();
+//   if (json.errors.length) {
+//     console.log("fout met de api", json.errors);
+//   }
+//   console.log(json);
+//   const standings = json.response?.[0]?.league?.standings?.[0] || [];
+
+//   return res.send(
+//     renderTemplate("server/views/index.liquid", {
+//       title: "Standings",
+//       items: standings,
+//     })
+//   );
+// });
+
 app.get("/", async (req, res) => {
-  const key = process.env.API_KEY;
-  const baseUrl = process.env.BASE_URL;
-  const leagueIds = [39, 140, 135, 78, 61];
+  const leagues = [
+    { id: 39, name: "Premier League" },
+    { id: 140, name: "La Liga" },
+    { id: 135, name: "Serie A" },
+    { id: 78, name: "Bundesliga" },
+    { id: 61, name: "Ligue 1" },
+  ];
 
-  // const endPoint = new URL("standings?league=39&season=2023", baseUrl);
-
-  // const response = await fetch(`${endPoint.href}`, {
-  //   method: "GET",
-  //   headers: {
-  //     "x-apisports-key": key,
-  //     "x-rapidapi-host": "v3.football.api-sports.io",
-  //   },
-  // });
-  // const json = await response.json();
-  // if (json.errors.length) {
-  //   console.log("fout met de api", json.errors);
-  // }
-  // console.log(json);
   return res.send(
     renderTemplate("server/views/index.liquid", {
-      title: "Home",
-      items: Object.values(data),
+      title: "Competitions",
+      leagues,
+    })
+  );
+});
+
+app.get("/competitions/:id", async (req, res) => {
+  const id = req.params.id;
+  const key = process.env.API_KEY;
+  const baseUrl = process.env.BASE_URL;
+
+  const endPoint = new URL(`standings?league=${id}&season=2023`, baseUrl);
+
+  const response = await fetch(`${endPoint.href}`, {
+    method: "GET",
+    headers: {
+      "x-apisports-key": key,
+      "x-rapidapi-host": "v3.football.api-sports.io",
+    },
+  });
+
+  const json = await response.json();
+  if (json.errors && Object.keys(json.errors).length) {
+    console.log("Fout met de API", json.errors);
+    return res.status(500).send("API error");
+  }
+
+  const leagueName = json.response?.[0]?.league?.name || `League ${id}`;
+  const standings = json.response?.[0]?.league?.standings?.[0] || [];
+
+  return res.send(
+    renderTemplate("server/views/competitions.liquid", {
+      title: leagueName,
+      items: standings,
     })
   );
 });
