@@ -2,6 +2,7 @@
 
 {% block content %}
 <h1>{{ title }}</h1>
+
 <ul class="grid">
   {% for item in items %}
   <li class="card">
@@ -14,4 +15,22 @@
   </li>
   {% endfor %}
 </ul>
+
+<hr>
+
+<h2>Quiz Time!</h2>
+<form method="POST" action="/quiz/check">
+  {% for q in quiz %}
+  <div class="card">
+    <p><strong>Q{{ forloop.index }}: {{ q.question }}</strong></p>
+    {% for choice in q.choices %}
+    <label>
+      <input type="radio" name="q{{ forloop.index }}" value="{{ choice.key }}" required>
+      {{ choice.key }}. {{ choice.value }}
+    </label><br>
+    {% endfor %}
+  </div>
+  {% endfor %}
+  <button type="submit">Check Answers</button>
+</form>
 {% endblock %}
