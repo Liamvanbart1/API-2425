@@ -16,23 +16,7 @@
   {% endfor %}
 </ul>
 
-<ul>
-  {% for question in questions %}
-  <li class="card">
-    <h2>{{ question.question }}</h2>
-    <ul>
-      {% for choice in question.choices %}
-      <li>
-        <strong>{{ choice.key }}:</strong> {{ choice.text }}
-        {% if choice.correct %}
-        ✅
-        {% endif %}
-      </li>
-      {% endfor %}
-    </ul>
-  </li>
-  {% endfor %}
-</ul>
+{% render '../components/questions/question.liquid', questions:questions %}
 
 
 {% endblock %}
