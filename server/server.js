@@ -120,6 +120,7 @@ app.get("/competitions/:id", async (req, res) => {
 
   const leagueName = json.response?.[0]?.league?.name || `League ${id}`;
   const standings = json.response?.[0]?.league?.standings?.[0] || [];
+
   const tableSummary = standings
     .slice(0, 20)
     .map(
@@ -148,11 +149,11 @@ Return the output as a valid JSON array of objects in the following format:
 [
   {
     "question": "Question text?",
-    "choices": {
-      "A": { "text": "Choice A", "correct": false },
-      "B": { "text": "Choice B", "correct": true },
-      "C": { "text": "Choice C", "correct": false }
-    }
+    "choices": [
+      { "id": 1, "text": "Choice A", "correct": false },
+      { "id": 2, "text": "Choice B", "correct": true },
+      { "id": 3, "text": "Choice C", "correct": false }
+    ]
   },
   ...
 ]
@@ -171,9 +172,9 @@ ${tableSummary}
 
     const raw = completion.choices[0].message.content;
     console.log("📝 Raw GPT response:", raw);
-    console.log(quizQuestions);
 
     quizQuestions = JSON.parse(raw);
+    console.log(quizQuestions);
   } catch (err) {
     console.error("❌ Failed to create quiz:", err);
   }
@@ -182,7 +183,7 @@ ${tableSummary}
     renderTemplate("server/views/competitions.liquid", {
       title: leagueName,
       items: standings,
-      quiz: quizQuestions,
+      questions: quizQuestions,
     })
   );
 });

@@ -1,0 +1,42 @@
+  [
+  {
+    "question": "Which team has the most points?",
+    "choices": {
+      "A": { "text": "Bayer Leverkusen", "correct": true },
+      "B": { "text": "VfB Stuttgart", "correct": false },
+      "C": { "text": "Bayern Munich", "correct": false }
+    }
+  },
+  {
+    "question": "Which team is in 4th place?",
+    "choices": {
+      "A": { "text": "RB Leipzig", "correct": true },
+      "B": { "text": "Borussia Dortmund", "correct": false },
+      "C": { "text": "Eintracht Frankfurt", "correct": false }
+    }
+  },
+  {
+    "question": "How many games did FC Augsburg play?",
+    "choices": {
+      "A": { "text": "33", "correct": false },
+      "B": { "text": "34", "correct": true },
+      "C": { "text": "35", "correct": false }
+    }
+  },
+  {
+    "question": "Which team is in 11th place?",
+    "choices": {
+      "A": { "text": "FC Augsburg", "correct": true },
+      "B": { "text": "VfL Wolfsburg", "correct": false },
+      "C": { "text": "FSV Mainz 05", "correct": false }
+    }
+  },
+  {
+    "question": "How many points does Union Berlin have?",
+    "choices": {
+      "A": { "text": "33", "correct": true },
+      "B": { "text": "34", "correct": false },
+      "C": { "text": "35", "correct": false }
+    }
+  }
+]
