@@ -1,38 +1,16 @@
-<ul>
-  {% for question in questions %}
-  <li class="card">
-    <h2>{{ question.question }}</h2>
-    <ul>
-      {% for choice in question.choices %}
-      <li>
-        <strong>{{ choice.key }}:</strong> {{ choice.text }}
-        {% if choice.correct %}
-        ✅
-        {% endif %}
-      </li>
-      {% endfor %}
-    </ul>
-  </li>
-  {% endfor %}
-</ul>
-
 {% for question in questions %}
-<h2>{{ question.question }}</h2>
-<form>
+<div class="question-block">
+  <h2>{{ question.question }}</h2>
+  <form>
     {% for choice in question.choices %}
-  <label for="{{ choice.id }}">{{ choice.text }}</label>
-  <input type="radio" id="{{ choice.id }}" name="{{ choice.id }}" value="{{ choice.text }}">
+    <div class="choice-label">
+      <input type="radio" id="q{{ loop.parent.loop.index }}_{{ choice.id }}" name="question{{ loop.parent.loop.index }}"
+        value="{{ choice.text }}">
+      <label for="q{{ loop.parent.loop.index }}_{{ choice.id }}">
+        {{ choice.text }}
+      </label>
+    </div>
+    {% endfor %}
+  </form>
+</div>
 {% endfor %}
-
-{% endfor %}
-</form>
-
-
-<form>
-  <input type="radio" id="html" name="fav_language" value="HTML">
-  <label for="html">HTML</label><br>
-  <input type="radio" id="css" name="fav_language" value="CSS">
-  <label for="css">CSS</label><br>
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-  <label for="javascript">JavaScript</label>
-</form>

@@ -158,6 +158,7 @@ Return the output as a valid JSON array of objects in the following format:
   ...
 ]
 
+the ids should count up so the second question the id's should be 4, 5, 6
 Here is the table:
 ${tableSummary}
   `;
