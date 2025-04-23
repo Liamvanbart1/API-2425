@@ -9,7 +9,7 @@ import storage from "node-persist";
 import { json, urlencoded } from "milliparsec";
 
 await storage.init({
-  dir: "server/storage",
+  dir: "server/data/scores",
 });
 
 const engine = new Liquid({
@@ -22,7 +22,9 @@ app
   .use(logger())
   .use("/", sirv("dist"))
   .use(urlencoded())
-  .listen(3000, () => console.log("Server available on http://localhost:3000"));
+  .listen(3000, () =>
+    console.log("Server available on http://localhost:3000 ga rammen dannnn")
+  );
 
 app.get("/", async (req, res) => {
   const leagues = [
@@ -73,7 +75,7 @@ app.get("/competitions/:id", async (req, res) => {
 
   const shuffledQuestions = quizQuestions.sort(() => 0.5 - Math.random());
   const selectedQuestions = shuffledQuestions.slice(0, 10);
-  console.log(selectedQuestions);
+  // console.log(selectedQuestions); dit was voor debugging
 
   return res.send(
     renderTemplate("server/views/competitions.liquid", {
