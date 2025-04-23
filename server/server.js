@@ -28,13 +28,47 @@ app
 
 app.get("/", async (req, res) => {
   const leagues = [
-    { id: 39, name: "Premier League" },
-    { id: 140, name: "La Liga" },
-    { id: 135, name: "Serie A" },
-    { id: 78, name: "Bundesliga" },
-    { id: 61, name: "Ligue 1" },
+    {
+      id: 39,
+      name: "Premier League",
+      description:
+        "England’s top-tier football league, known for its fast-paced and physical play.",
+      funFact:
+        "The Premier League is the most-watched football league in the world, broadcast in 212 territories to 643 million homes.",
+    },
+    {
+      id: 140,
+      name: "La Liga",
+      description:
+        "Spain’s premier football competition, famous for its technical style and legendary clubs.",
+      funFact:
+        "La Liga has produced the most Ballon d'Or winners in the 21st century, thanks to stars like Messi and Ronaldo.",
+    },
+    {
+      id: 135,
+      name: "Serie A",
+      description:
+        "Italy’s top division, celebrated for its tactical depth and historic football clubs.",
+      funFact:
+        "Serie A has the most UEFA Champions League finalists among Italian clubs, with AC Milan leading the pack.",
+    },
+    {
+      id: 78,
+      name: "Bundesliga",
+      description:
+        "Germany’s top league, renowned for its attacking football and passionate fan culture.",
+      funFact:
+        "The Bundesliga has the highest average attendance of any football league in the world.",
+    },
+    {
+      id: 61,
+      name: "Ligue 1",
+      description:
+        "France’s top professional league, known for producing world-class young talent.",
+      funFact:
+        "Ligue 1 is the starting point for many global stars, including Thierry Henry, Eden Hazard, and Kylian Mbappé.",
+    },
   ];
-
   return res.send(
     renderTemplate("server/views/index.liquid", {
       title: "Competitions",

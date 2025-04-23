@@ -17,8 +17,13 @@
 body {
   max-width: 1440px;
   margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 main {
   padding: 1rem;
+  flex: 1;
 }

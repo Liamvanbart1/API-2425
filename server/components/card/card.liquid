@@ -1,4 +1,11 @@
-<div class="card">
-  <h2 class="h2">{{ item.name }}</h2>
-  <img class="card__image" src="{{ item.image.src }}" alt="{{ item.image.alt }}" width="{{ item.image.width }}" height="{{ item.image.height }}" />
-</div>
+<li class="card">
+  <a href="/competitions/{{ league.id }}" class="button">Begin Quiz about {{ league.name }} </a>
+  <div class="image-container">
+    <img src="https://media.api-sports.io/football/leagues/{{ league.id }}.png" alt="{{ league.name }} logo" />
+  </div>
+  <div class="content">
+    <h2>{{ league.name }}</h2>
+    <h2>{{ league.description }}</h2>
+    <h2>{{ league.funFact }}</h2>
+  </div>
+</li>

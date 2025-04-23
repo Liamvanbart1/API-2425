@@ -1,20 +1,7 @@
 header {
-  position: sticky;
-  top: 0;
   display: flex;
   justify-content: center;
-  padding: 1rem;
   background-color: var(--second-color);
-  width: 75%;
-  justify-self: center;
   border-radius: 0 0 1em 1em;
   box-shadow: 0.125em 0.3125em 0.3125em black;
-}
-
-footer {
-  padding: 1rem;
-}
-
-.orange {
-  color: red;
 }

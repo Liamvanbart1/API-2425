@@ -4,12 +4,7 @@
 <h1>{{ title }}</h1>
 <ul class="grid">
   {% for league in leagues %}
-  <li class="card">
-    <a href="/competitions/{{ league.id }}">
-      <h2>{{ league.name }}</h2>
-      <img src="https://media.api-sports.io/football/leagues/{{ league.id }}.png" alt="{{ league.name }} logo" />
-    </a>
-  </li>
+  {% render "../components/card/card.liquid", league: league %}
   {% endfor %}
 </ul>
 {% endblock %}
