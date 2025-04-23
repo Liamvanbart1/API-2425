@@ -1,6 +1,7 @@
 header {
   display: flex;
   justify-content: center;
+  padding: 1rem;
   background-color: var(--second-color);
   border-radius: 0 0 1em 1em;
   box-shadow: 0.125em 0.3125em 0.3125em black;

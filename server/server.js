@@ -71,7 +71,7 @@ app.get("/", async (req, res) => {
   ];
   return res.send(
     renderTemplate("server/views/index.liquid", {
-      title: "Competitions",
+      title: "The Big Football Quiz",
       leagues,
     })
   );
