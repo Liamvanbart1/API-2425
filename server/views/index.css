@@ -14,3 +14,15 @@ body {
   background-color: var(--base-color);
   color: var(--text-color);
 }
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--second-color);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.hero-image {
+  border-radius: 1em;
+}
