@@ -21,6 +21,7 @@ const app = new App();
 app
   .use(logger())
   .use("/", sirv("dist"))
+  .use(sirv("client/public"))
   .use(urlencoded())
   .listen(3000, () =>
     console.log("Server available on http://localhost:3000 ga rammen dannnn")
