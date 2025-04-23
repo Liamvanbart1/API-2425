@@ -3,19 +3,6 @@
 {% block content %}
 <h1>{{ title }}</h1>
 
-<ul class="grid">
-  {% for item in items %}
-  <li class="card">
-    <h2>#{{ item.rank }} - {{ item.team.name }}</h2>
-    <p>Points: {{ item.points }}</p>
-    <p>Played: {{ item.all.played }}</p>
-    <p>Wins: {{ item.all.win }}</p>
-    <p>Losses: {{ item.all.lose }}</p>
-    <p>Draws: {{ item.all.draw }}</p>
-  </li>
-  {% endfor %}
-</ul>
-
 {% render '../components/questions/question.liquid', questions:questions %}
 
 
