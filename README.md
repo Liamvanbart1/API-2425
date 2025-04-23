@@ -117,3 +117,5 @@ Als het werkt, zet je je server weer uit door in de terminal de toetscombinatie 
 ### Idee voor API
 
 -- flashcore clone
+
+json opslaan zodat
