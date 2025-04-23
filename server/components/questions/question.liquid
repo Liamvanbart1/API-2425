@@ -1,16 +1,31 @@
-{% for question in questions %}
-<div class="question-block">
-  <h2>{{ question.question }}</h2>
-  <form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ title }} Quiz</title>
+</head>
+
+<body>
+  <h1>{{ title }} Quiz</h1>
+
+<form id="quiz-form" action="/submit-quiz/{{ competitionId }}" method="POST">
+<h2>Competition ID: {{ competitionId }}</h2>
+  {% for question in questions %}
+  <div class="question-block">
+    <h2>{{ question.question }}</h2>
     {% for choice in question.choices %}
     <div class="choice-label">
-      <input type="radio" id="q{{ loop.parent.loop.index }}_{{ choice.id }}" name="question{{ loop.parent.loop.index }}"
+      <input type="radio" id="q{{ question.questionID }}_{{ choice.id }}" name="question{{ question.questionID }}"
         value="{{ choice.text }}">
-      <label for="q{{ loop.parent.loop.index }}_{{ choice.id }}">
-        {{ choice.text }}
-      </label>
+      <label for="q{{ question.questionID }}_{{ choice.id }}">{{ choice.text }}</label>
     </div>
     {% endfor %}
-  </form>
-</div>
-{% endfor %}
+  </div>
+  {% endfor %}
+  <button type="submit">Submit</button>
+</form>
+</body>
+
+</html>

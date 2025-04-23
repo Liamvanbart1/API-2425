@@ -4,7 +4,7 @@ import { writeFile } from "fs/promises";
 import path from "path";
 
 const getFootballstandings = async () => {
-  const id = 39;
+  const id = 135;
   const key = process.env.API_KEY;
   const baseUrl = process.env.BASE_URL;
 
@@ -24,7 +24,7 @@ const getFootballstandings = async () => {
     console.log("fout met de api", json.errors);
   }
 
-  const leagueName = json.response?.[0]?.league?.name || `League ${id}`;
+  // const leagueName = json.response?.[0]?.league?.name || `League ${id}`;
   const standings = json.response?.[0]?.league?.standings?.[0] || [];
 
   const tableSummary = standings
@@ -42,7 +42,7 @@ const getFootballstandings = async () => {
   });
 
   const prompt = `
-You are a quiz generator. Create 5 multiple-choice questions based on the following football league standings.
+You are a quiz generator. Create 25 multiple-choice questions based on the following football league standings.
 
 Each question must:
 - Be based on rank, points, wins, or games played.
@@ -54,6 +54,7 @@ Return the output as a valid JSON array of objects in the following format:
 [
   {
     "question": "Question text?",
+    "questionID": 1,
     "choices": [
       { "id": 1, "text": "Choice A", "correct": false },
       { "id": 2, "text": "Choice B", "correct": true },

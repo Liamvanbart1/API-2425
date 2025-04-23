@@ -1,0 +1,527 @@
+[
+  {
+    "question": "Which team finished in 4th place?",
+    "questionID": 1,
+    "choices": [
+      {
+        "id": 1,
+        "text": "Atalanta",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Bologna",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "text": "AS Roma",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "How many points did Juventus finish with?",
+    "questionID": 2,
+    "choices": [
+      {
+        "id": 4,
+        "text": "71",
+        "correct": true
+      },
+      {
+        "id": 5,
+        "text": "69",
+        "correct": false
+      },
+      {
+        "id": 6,
+        "text": "61",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which team was in 11th place?",
+    "questionID": 3,
+    "choices": [
+      {
+        "id": 7,
+        "text": "Genoa",
+        "correct": true
+      },
+      {
+        "id": 8,
+        "text": "Monza",
+        "correct": false
+      },
+      {
+        "id": 9,
+        "text": "Verona",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "How many games were played by Fiorentina?",
+    "questionID": 4,
+    "choices": [
+      {
+        "id": 10,
+        "text": "38",
+        "correct": false
+      },
+      {
+        "id": 11,
+        "text": "39",
+        "correct": false
+      },
+      {
+        "id": 12,
+        "text": "37",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Which team had 38 games played?",
+    "questionID": 5,
+    "choices": [
+      {
+        "id": 13,
+        "text": "Bologna",
+        "correct": false
+      },
+      {
+        "id": 14,
+        "text": "Empoli",
+        "correct": false
+      },
+      {
+        "id": 15,
+        "text": "Lecce",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "How many points did Sassuolo finish with?",
+    "questionID": 6,
+    "choices": [
+      {
+        "id": 16,
+        "text": "30",
+        "correct": true
+      },
+      {
+        "id": 17,
+        "text": "38",
+        "correct": false
+      },
+      {
+        "id": 18,
+        "text": "36",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who finished in 9th place?",
+    "questionID": 7,
+    "choices": [
+      {
+        "id": 19,
+        "text": "Torino",
+        "correct": true
+      },
+      {
+        "id": 20,
+        "text": "Napoli",
+        "correct": false
+      },
+      {
+        "id": 21,
+        "text": "Genoa",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "How many wins did Inter have?",
+    "questionID": 8,
+    "choices": [
+      {
+        "id": 22,
+        "text": "30",
+        "correct": true
+      },
+      {
+        "id": 23,
+        "text": "25",
+        "correct": false
+      },
+      {
+        "id": 24,
+        "text": "27",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which team finished with 63 points?",
+    "questionID": 9,
+    "choices": [
+      {
+        "id": 25,
+        "text": "AS Roma",
+        "correct": true
+      },
+      {
+        "id": 26,
+        "text": "Lazio",
+        "correct": false
+      },
+      {
+        "id": 27,
+        "text": "Fiorentina",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who was in 15th place?",
+    "questionID": 10,
+    "choices": [
+      {
+        "id": 28,
+        "text": "Udinese",
+        "correct": true
+      },
+      {
+        "id": 29,
+        "text": "Cagliari",
+        "correct": false
+      },
+      {
+        "id": 30,
+        "text": "Empoli",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "How many points did AC Milan have?",
+    "questionID": 11,
+    "choices": [
+      {
+        "id": 31,
+        "text": "75",
+        "correct": true
+      },
+      {
+        "id": 32,
+        "text": "68",
+        "correct": false
+      },
+      {
+        "id": 33,
+        "text": "71",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which team had 17 points?",
+    "questionID": 12,
+    "choices": [
+      {
+        "id": 34,
+        "text": "Salernitana",
+        "correct": true
+      },
+      {
+        "id": 35,
+        "text": "Udinese",
+        "correct": false
+      },
+      {
+        "id": 36,
+        "text": "Monza",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "How many points did Lazio finish with?",
+    "questionID": 13,
+    "choices": [
+      {
+        "id": 37,
+        "text": "61",
+        "correct": false
+      },
+      {
+        "id": 38,
+        "text": "69",
+        "correct": false
+      },
+      {
+        "id": 39,
+        "text": "63",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "How many games were played by Genoa?",
+    "questionID": 14,
+    "choices": [
+      {
+        "id": 40,
+        "text": "36",
+        "correct": false
+      },
+      {
+        "id": 41,
+        "text": "38",
+        "correct": true
+      },
+      {
+        "id": 42,
+        "text": "37",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who finished in 5th place?",
+    "questionID": 15,
+    "choices": [
+      {
+        "id": 43,
+        "text": "Bologna",
+        "correct": true
+      },
+      {
+        "id": 44,
+        "text": "Atalanta",
+        "correct": false
+      },
+      {
+        "id": 45,
+        "text": "AS Roma",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "How many wins did Verona have?",
+    "questionID": 16,
+    "choices": [
+      {
+        "id": 46,
+        "text": "10",
+        "correct": false
+      },
+      {
+        "id": 47,
+        "text": "12",
+        "correct": false
+      },
+      {
+        "id": 48,
+        "text": "11",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Which team was in 13th place?",
+    "questionID": 17,
+    "choices": [
+      {
+        "id": 49,
+        "text": "Verona",
+        "correct": true
+      },
+      {
+        "id": 50,
+        "text": "Lecce",
+        "correct": false
+      },
+      {
+        "id": 51,
+        "text": "Udinese",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "How many points did Monza finish with?",
+    "questionID": 18,
+    "choices": [
+      {
+        "id": 52,
+        "text": "45",
+        "correct": true
+      },
+      {
+        "id": 53,
+        "text": "53",
+        "correct": false
+      },
+      {
+        "id": 54,
+        "text": "38",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who finished in 3rd place?",
+    "questionID": 19,
+    "choices": [
+      {
+        "id": 55,
+        "text": "Juventus",
+        "correct": true
+      },
+      {
+        "id": 56,
+        "text": "Bologna",
+        "correct": false
+      },
+      {
+        "id": 57,
+        "text": "Atalanta",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which team played 38 games?",
+    "questionID": 20,
+    "choices": [
+      {
+        "id": 58,
+        "text": "Juventus",
+        "correct": false
+      },
+      {
+        "id": 59,
+        "text": "AC Milan",
+        "correct": false
+      },
+      {
+        "id": 60,
+        "text": "Frosinone",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "How many points did Empoli finish with?",
+    "questionID": 21,
+    "choices": [
+      {
+        "id": 61,
+        "text": "36",
+        "correct": true
+      },
+      {
+        "id": 62,
+        "text": "35",
+        "correct": false
+      },
+      {
+        "id": 63,
+        "text": "30",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who was in 7th place?",
+    "questionID": 22,
+    "choices": [
+      {
+        "id": 64,
+        "text": "Lazio",
+        "correct": false
+      },
+      {
+        "id": 65,
+        "text": "Bologna",
+        "correct": false
+      },
+      {
+        "id": 66,
+        "text": "Lecce",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "How many wins did Cagliari have?",
+    "questionID": 23,
+    "choices": [
+      {
+        "id": 67,
+        "text": "10",
+        "correct": false
+      },
+      {
+        "id": 68,
+        "text": "11",
+        "correct": true
+      },
+      {
+        "id": 69,
+        "text": "12",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which team had 38 points?",
+    "questionID": 24,
+    "choices": [
+      {
+        "id": 70,
+        "text": "Lecce",
+        "correct": false
+      },
+      {
+        "id": 71,
+        "text": "Verona",
+        "correct": false
+      },
+      {
+        "id": 72,
+        "text": "Frosinone",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Who finished in 10th place?",
+    "questionID": 25,
+    "choices": [
+      {
+        "id": 73,
+        "text": "Napoli",
+        "correct": false
+      },
+      {
+        "id": 74,
+        "text": "Torino",
+        "correct": false
+      },
+      {
+        "id": 75,
+        "text": "Genoa",
+        "correct": true
+      }
+    ]
+  }
+]

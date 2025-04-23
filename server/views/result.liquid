@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Result</title>
+</head>
+
+<body>
+  <h1>Quiz Results</h1>
+  <p>Your Score: {{ score }}/{{ total }}</p>
+
+  <ul>
+    {% for result in results %}
+    <li>
+      <strong>{{ result.question }}</strong><br />
+      Your answer: {{ result.userAnswer }}<br />
+      Correct answer: {{ result.correctAnswer }}<br />
+      {% if result.isCorrect %}
+      ✅ Correct!
+      {% else %}
+      ❌ Incorrect
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+
+  <a href="/">Back to Home</a>
+</body>
+
+</html>

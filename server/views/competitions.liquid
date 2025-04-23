@@ -3,7 +3,7 @@
 {% block content %}
 <h1>{{ title }}</h1>
 
-{% render '../components/questions/question.liquid', questions:questions %}
+{% render '../components/questions/question.liquid', questions:questions, competitionId: competitionId %}
 
 
 {% endblock %}

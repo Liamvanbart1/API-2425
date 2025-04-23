@@ -1,0 +1,527 @@
+[
+  {
+    "question": "Which team finished at the top of the league?",
+    "questionID": 1,
+    "choices": [
+      {
+        "id": 1,
+        "text": "Real Madrid",
+        "correct": true
+      },
+      {
+        "id": 2,
+        "text": "Barcelona",
+        "correct": false
+      },
+      {
+        "id": 3,
+        "text": "Girona",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "How many points did Real Betis have?",
+    "questionID": 2,
+    "choices": [
+      {
+        "id": 4,
+        "text": "53",
+        "correct": false
+      },
+      {
+        "id": 5,
+        "text": "57",
+        "correct": true
+      },
+      {
+        "id": 6,
+        "text": "49",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which team had 46 points?",
+    "questionID": 3,
+    "choices": [
+      {
+        "id": 7,
+        "text": "Alaves",
+        "correct": true
+      },
+      {
+        "id": 8,
+        "text": "Osasuna",
+        "correct": false
+      },
+      {
+        "id": 9,
+        "text": "Getafe",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "How many games did Atletico Madrid play?",
+    "questionID": 4,
+    "choices": [
+      {
+        "id": 10,
+        "text": "36",
+        "correct": false
+      },
+      {
+        "id": 11,
+        "text": "38",
+        "correct": true
+      },
+      {
+        "id": 12,
+        "text": "40",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which team had 60 points?",
+    "questionID": 5,
+    "choices": [
+      {
+        "id": 13,
+        "text": "Real Sociedad",
+        "correct": true
+      },
+      {
+        "id": 14,
+        "text": "Getafe",
+        "correct": false
+      },
+      {
+        "id": 15,
+        "text": "Celta Vigo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who finished 10th in the league standings?",
+    "questionID": 6,
+    "choices": [
+      {
+        "id": 16,
+        "text": "Valencia",
+        "correct": false
+      },
+      {
+        "id": 17,
+        "text": "Alaves",
+        "correct": true
+      },
+      {
+        "id": 18,
+        "text": "Osasuna",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "How many points did Sevilla have?",
+    "questionID": 7,
+    "choices": [
+      {
+        "id": 19,
+        "text": "41",
+        "correct": true
+      },
+      {
+        "id": 20,
+        "text": "40",
+        "correct": false
+      },
+      {
+        "id": 21,
+        "text": "38",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which team played 38 games?",
+    "questionID": 8,
+    "choices": [
+      {
+        "id": 22,
+        "text": "Villarreal",
+        "correct": false
+      },
+      {
+        "id": 23,
+        "text": "Girona",
+        "correct": false
+      },
+      {
+        "id": 24,
+        "text": "Almeria",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "How many points did Athletic Club have?",
+    "questionID": 9,
+    "choices": [
+      {
+        "id": 25,
+        "text": "76",
+        "correct": false
+      },
+      {
+        "id": 26,
+        "text": "68",
+        "correct": true
+      },
+      {
+        "id": 27,
+        "text": "60",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who finished 18th in the league standings?",
+    "questionID": 10,
+    "choices": [
+      {
+        "id": 28,
+        "text": "Granada CF",
+        "correct": true
+      },
+      {
+        "id": 29,
+        "text": "Rayo Vallecano",
+        "correct": false
+      },
+      {
+        "id": 30,
+        "text": "Cadiz",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which team had 33 points?",
+    "questionID": 11,
+    "choices": [
+      {
+        "id": 31,
+        "text": "Girona",
+        "correct": false
+      },
+      {
+        "id": 32,
+        "text": "Rayo Vallecano",
+        "correct": false
+      },
+      {
+        "id": 33,
+        "text": "Cadiz",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "How many games did Real Sociedad play?",
+    "questionID": 12,
+    "choices": [
+      {
+        "id": 34,
+        "text": "36",
+        "correct": false
+      },
+      {
+        "id": 35,
+        "text": "38",
+        "correct": true
+      },
+      {
+        "id": 36,
+        "text": "40",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which team had 21 points?",
+    "questionID": 13,
+    "choices": [
+      {
+        "id": 37,
+        "text": "Almeria",
+        "correct": true
+      },
+      {
+        "id": 38,
+        "text": "Granada CF",
+        "correct": true
+      },
+      {
+        "id": 39,
+        "text": "Villarreal",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who finished 6th in the league standings?",
+    "questionID": 14,
+    "choices": [
+      {
+        "id": 40,
+        "text": "Real Betis",
+        "correct": false
+      },
+      {
+        "id": 41,
+        "text": "Real Sociedad",
+        "correct": true
+      },
+      {
+        "id": 42,
+        "text": "Real Madrid",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "How many wins did Barcelona have?",
+    "questionID": 15,
+    "choices": [
+      {
+        "id": 43,
+        "text": "28",
+        "correct": false
+      },
+      {
+        "id": 44,
+        "text": "25",
+        "correct": false
+      },
+      {
+        "id": 45,
+        "text": "26",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Which team played the most games?",
+    "questionID": 16,
+    "choices": [
+      {
+        "id": 46,
+        "text": "Girona",
+        "correct": false
+      },
+      {
+        "id": 47,
+        "text": "Real Madrid",
+        "correct": false
+      },
+      {
+        "id": 48,
+        "text": "Athletic Club",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "How many points did Osasuna have?",
+    "questionID": 17,
+    "choices": [
+      {
+        "id": 49,
+        "text": "45",
+        "correct": true
+      },
+      {
+        "id": 50,
+        "text": "46",
+        "correct": false
+      },
+      {
+        "id": 51,
+        "text": "40",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who finished 12th in the league standings?",
+    "questionID": 18,
+    "choices": [
+      {
+        "id": 52,
+        "text": "Sevilla",
+        "correct": false
+      },
+      {
+        "id": 53,
+        "text": "Celta Vigo",
+        "correct": false
+      },
+      {
+        "id": 54,
+        "text": "Getafe",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Which team had 49 points?",
+    "questionID": 19,
+    "choices": [
+      {
+        "id": 55,
+        "text": "Valencia",
+        "correct": true
+      },
+      {
+        "id": 56,
+        "text": "Alaves",
+        "correct": false
+      },
+      {
+        "id": 57,
+        "text": "Osasuna",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "How many games did Rayo Vallecano play?",
+    "questionID": 20,
+    "choices": [
+      {
+        "id": 58,
+        "text": "36",
+        "correct": false
+      },
+      {
+        "id": 59,
+        "text": "38",
+        "correct": true
+      },
+      {
+        "id": 60,
+        "text": "40",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who finished 16th in the league standings?",
+    "questionID": 21,
+    "choices": [
+      {
+        "id": 61,
+        "text": "Las Palmas",
+        "correct": true
+      },
+      {
+        "id": 62,
+        "text": "Mallorca",
+        "correct": false
+      },
+      {
+        "id": 63,
+        "text": "Rayo Vallecano",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which team had 33 points?",
+    "questionID": 22,
+    "choices": [
+      {
+        "id": 64,
+        "text": "Cadiz",
+        "correct": false
+      },
+      {
+        "id": 65,
+        "text": "Valencia",
+        "correct": false
+      },
+      {
+        "id": 66,
+        "text": "Girona",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "How many points did Villarreal have?",
+    "questionID": 23,
+    "choices": [
+      {
+        "id": 67,
+        "text": "53",
+        "correct": false
+      },
+      {
+        "id": 68,
+        "text": "57",
+        "correct": false
+      },
+      {
+        "id": 69,
+        "text": "49",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Who finished 8th in the league standings?",
+    "questionID": 24,
+    "choices": [
+      {
+        "id": 70,
+        "text": "Real Betis",
+        "correct": false
+      },
+      {
+        "id": 71,
+        "text": "Valencia",
+        "correct": false
+      },
+      {
+        "id": 72,
+        "text": "Villarreal",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Which team had 20 points?",
+    "questionID": 25,
+    "choices": [
+      {
+        "id": 73,
+        "text": "Almeria",
+        "correct": false
+      },
+      {
+        "id": 74,
+        "text": "Granada CF",
+        "correct": false
+      },
+      {
+        "id": 75,
+        "text": "Getafe",
+        "correct": true
+      }
+    ]
+  }
+]
