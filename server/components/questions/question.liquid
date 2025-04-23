@@ -1,10 +1,14 @@
 <h1>{{ title }} Quiz</h1>
 <form id="quiz-form" action="/submit-quiz/{{ competitionId }}" method="POST">
+  <div>
+    <label for="userName">Enter Your Name:</label>
+    <input type="text" id="userName" name="userId" required />
+  </div>
   {% for question in questions %}
-  <div class="question-block">
+  <div>
     <h2>{{ question.question }}</h2>
     {% for choice in question.choices %}
-    <div class="choice-label">
+    <div>
       <input type="radio" id="q{{ question.questionID }}_{{ choice.id }}" name="question{{ question.questionID }}"
         value="{{ choice.text }}">
       <label for="q{{ question.questionID }}_{{ choice.id }}">{{ choice.text }}</label>

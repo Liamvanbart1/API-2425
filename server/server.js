@@ -7,6 +7,7 @@ import sirv from "sirv";
 import { readFile } from "fs/promises";
 import storage from "node-persist";
 import { json, urlencoded } from "milliparsec";
+import { timeStamp } from "console";
 
 await storage.init({
   dir: "server/data/scores",
@@ -70,10 +71,25 @@ app.get("/", async (req, res) => {
         "Ligue 1 is the starting point for many global stars, including Thierry Henry, Eden Hazard, and Kylian Mbappé.",
     },
   ];
+
+  const keys = await storage.keys();
+  const scores = [];
+
+  for (const key of keys) {
+    const data = await storage.getItem(key);
+    if (data?.score !== undefined) {
+      scores.push({ userId: key, ...data });
+    }
+  }
+
+  const sortedScores = scores.sort((a, b) => b.score - a.score);
+  const topScores = sortedScores.slice(0, 5);
+
   return res.send(
     renderTemplate("server/views/index.liquid", {
       title: "The Big Football Quiz",
       leagues,
+      topScores,
     })
   );
 });
@@ -120,10 +136,9 @@ app.get("/competitions/:id", async (req, res) => {
     })
   );
 });
-
 app.post("/submit-quiz/:id", async (req, res) => {
   const competitionId = req.params.id;
-  const userAnswers = req.body;
+  const { userId, ...userAnswers } = req.body;
 
   const filePath = path.resolve(
     "server/components/questions/json",
@@ -159,11 +174,18 @@ app.post("/submit-quiz/:id", async (req, res) => {
     });
   }
 
+  await storage.setItem(userId, {
+    score,
+    total: correctAnswers.length,
+    date: new Date().toISOString(),
+  });
+
   return res.send(
     renderTemplate("server/views/result.liquid", {
       score,
       total: correctAnswers.length,
       results,
+      userId,
     })
   );
 });

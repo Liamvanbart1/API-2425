@@ -15,14 +15,45 @@ body {
   color: var(--text-color);
 }
 
+p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.hero-container {
+  gap: 1em;
+  display: grid;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
 .hero {
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  background-image: url('/images/arsenal.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--second-color);
   display: flex;
   justify-content: space-between;
-  background-color: var(--second-color);
-  border-radius: 1rem;
   padding: 1rem;
+  z-index: 1;
 }
 
 .hero-image {
   border-radius: 1em;
+  z-index: 1;
+}
+
+ul {
+  align-self: center;
+  z-index: 1;
 }

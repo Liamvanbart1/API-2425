@@ -1,7 +1,7 @@
 {% layout "server/layouts/base.liquid" %}
 
 {% block content %}
-<div>
+<div class="hero-container">
   <div class="hero">
     <ul>
       <li><p>WELCOME TO</p></li>
@@ -17,5 +17,17 @@
       {% endfor %}
     </ul>
   </div>
+    <div class="scoreboard">
+      <h2>Top Scores</h2>
+      <ul>
+        {% for score in topScores %}
+        <li>
+          <span class="username">{{ score.userId }}</span> -
+          <span class="score">{{ score.score }} points</span>
+          {% comment %} <span class="score">{{ score.date }} points</span> {% endcomment %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
 </div>
 {% endblock %}
