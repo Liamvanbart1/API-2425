@@ -1,4 +1,3 @@
-/* Base container for the quiz results */
 .quiz-results-container {
   max-width: 800px;
   margin: 0 auto;
@@ -9,7 +8,7 @@
   max-height: 100;
 }
 
-/* Title Styling */
+
 .quiz-results-title {
   font-size: 2.5rem;
   text-align: center;
@@ -17,7 +16,7 @@
   color: #333;
 }
 
-/* Score Display */
+
 .quiz-score {
   font-size: 1.2rem;
   text-align: center;
@@ -30,7 +29,7 @@
   color: #007bff;
 }
 
-/* Container for individual results */
+
 .qcontainer {
   margin-bottom: 2rem;
 }
@@ -65,7 +64,7 @@
   color: #333;
 }
 
-/* Result Status: Correct or Incorrect */
+
 .result-status {
   font-size: 1rem;
   margin-top: 0.5rem;
@@ -81,7 +80,7 @@
   font-weight: bold;
 }
 
-/* Back to Home Button */
+
 .back-button {
   display: block;
   width: 100%;
