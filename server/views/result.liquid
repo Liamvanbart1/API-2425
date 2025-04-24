@@ -1,31 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+{% layout "server/layouts/base.liquid" %}
 
-<head>
-  <meta charset="UTF-8">
-  <title>Quiz Result</title>
-</head>
+{% block content %}
+<div class="quiz-results-container">
+  <h1 class="quiz-results-title">Quiz Results</h1>
+  <p class="quiz-score">Your Score: <span>{{ score }}</span> / <span>{{ total }}</span></p>
 
-<body>
-  <h1>Quiz Results</h1>
-  <p>Your Score: {{ score }}/{{ total }}</p>
+  <div class="qcontainer">
+    <ul class="results-list">
+      {% for result in results %}
+      <li class="result-item">
+        <div class="question">
+          <strong>{{ result.question }}</strong>
+        </div>
+        <div class="answers">
+          <p>Your answer: <span class="user-answer">{{ result.userAnswer }}</span></p>
+          <p>Correct answer: <span class="correct-answer">{{ result.correctAnswer }}</span></p>
+        </div>
+        <div class="result-status">
+          {% if result.isCorrect %}
+          <span class="correct">Correct!</span>
+          {% else %}
+          <span class="incorrect">Incorrect</span>
+          {% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 
-  <ul>
-    {% for result in results %}
-    <li>
-      <strong>{{ result.question }}</strong><br />
-      Your answer: {{ result.userAnswer }}<br />
-      Correct answer: {{ result.correctAnswer }}<br />
-      {% if result.isCorrect %}
-       Correct!
-      {% else %}
-       Incorrect
-      {% endif %}
-    </li>
-    {% endfor %}
-  </ul>
-
-  <a href="/">Back to Home</a>
-</body>
-
-</html>
+  <a href="/" class="back-button">Back to Home</a>
+</div>
+{% endblock %}
