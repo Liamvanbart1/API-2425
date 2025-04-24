@@ -14,7 +14,6 @@ await storage.init({
 });
 
 await storage.clear();
-console.log("🧹 Storage cleared on server startup.");
 
 const engine = new Liquid({
   extname: ".liquid",

@@ -1,0 +1,15 @@
+<button class="toggle-sidebar">
+  <span class="arrow">&#8594;</span> <!-- Right arrow -->
+</button>
+
+<div class="scoreboard">
+  <h2>Top Scores</h2>
+  <ul>
+    {% for score in topScores %}
+    <li>
+      <span class="username">{{ score.userId }}</span> -
+      <span class="score">{{ score.score }} points</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
