@@ -6,3 +6,27 @@ header {
   border-radius: 0 0 1em 1em;
   box-shadow: 0.125em 0.3125em 0.3125em black;
 }
+
+.logo {
+  width: 20%;
+  padding: .5em;
+}
+
+.button {
+  background-color: var(--base-color);
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background-color: var(--text-color);
+  color: var(--second-color);
+  border-color: var(--second-color);
+}

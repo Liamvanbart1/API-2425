@@ -13,6 +13,9 @@ await storage.init({
   dir: "server/data/scores",
 });
 
+await storage.clear();
+console.log("🧹 Storage cleared on server startup.");
+
 const engine = new Liquid({
   extname: ".liquid",
 });
@@ -136,6 +139,7 @@ app.get("/competitions/:id", async (req, res) => {
     })
   );
 });
+
 app.post("/submit-quiz/:id", async (req, res) => {
   const competitionId = req.params.id;
   const { userId, ...userAnswers } = req.body;
