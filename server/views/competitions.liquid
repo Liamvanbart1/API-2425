@@ -4,8 +4,13 @@
 <h1>{{ title }}</h1>
 <div class="qcontainer">
   {% render '../components/questions/question.liquid', questions:questions, competitionId: competitionId %}
+  <div id="timer" style="font-size: 24px; font-weight: bold;"></div>
+  <button id="startButton">Start Timer</button>
 </div>
-
+<script>
+  // Pass a flag to start audio
+  window.startAudio = true;  // This flag will be checked by your index.js
+</script>
 
 
 

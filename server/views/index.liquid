@@ -4,32 +4,48 @@
 <div class="hero-container">
   <div class="hero">
     <ul>
-      <li><p>WELCOME TO</p></li>
-      <li><h1>{{ title }}</h1></li>
-      <li><p>Are you ready to test your football knowledge?</p></li>
-      <li><button id="toggleButton">Yes!</button></li>
+      <li>
+        <p>WELCOME TO</p>
+      </li>
+      <li>
+        <h1>{{ title }}</h1>
+      </li>
+      <li>
+        <p>Are you ready to test your football knowledge?</p>
+      </li>
+      {% comment %} <li><button id="toggleButton">Yes!</button></li> {% endcomment %}
+      <li><a href="#scroll" id="toggleButton">Yes!</a></li>
+
     </ul>
     <img src="/images/arsenal.jpg" alt="Arsenal" class="hero-image">
     {% comment %} https://unsplash.com/photos/a-crowd-of-people-in-a-stadium-LbT_j62t94U {% endcomment %}
-    </div>
-  <div class="scoreboard">
-    <h2>Top Scores</h2>
-    <ul>
+  </div>
+</div>
+<div id="scroll" class="competitions">
+  <h2>Which of these competitions do you have the most knowledge about?</h2>
+  <ul class="flex">
+    {% for league in leagues %}
+    {% render "../components/card/card.liquid", league: league %}
+    {% endfor %}
+  </ul>
+</div>
+<div class="scores">
+  <table class="score-table">
+    <thead>
+      <tr>
+        <th>User</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody>
       {% for score in topScores %}
-      <li>
-        <span class="username">{{ score.userId }}</span> -
-        <span class="score">{{ score.score }} points</span>
-        {% comment %} <span class="score">{{ score.date }} points</span> {% endcomment %}
-      </li>
+      <tr>
+        <td class="username">{{ score.userId }}</td>
+        <td class="score">{{ score.score }} points</td>
+        {% comment %}<td>{{ score.date }}</td>{% endcomment %}
+      </tr>
       {% endfor %}
-    </ul>
-  </div>
-  </div>
-  <div class="competitions">
-    <ul class="grid">
-      {% for league in leagues %}
-      {% render "../components/card/card.liquid", league: league %}
-      {% endfor %}
-    </ul>
-  </div>
+    </tbody>
+  </table>
+</div>
 {% endblock %}

@@ -1,16 +1,16 @@
 /* global styles */
-@import 'reset.css';
+@import "reset.css";
 @import "typography.css";
 
 /*.layout and view styling */
-@import '../server/layouts/base.css';
-@import '../server/views/index.css';
-@import '../server/views/competitions.css';
-@import '../server/views/results.css';
+@import "../server/layouts/base.css";
+@import "../server/views/index.css";
+@import "../server/views/competitions.css";
+@import "../server/views/results.css";
 
 /* component styling */
-@import '../server/components/card/card.css';
-@import '../server/components/questions/question.css';
+@import "../server/components/card/card.css";
+@import "../server/components/questions/question.css";
 
 * {
   box-sizing: border-box;
@@ -20,12 +20,11 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
 }
 
 main {
   padding: 1rem;
-  flex: 1;
+  gap: 1em;
+  display: grid;
 }

@@ -7,7 +7,6 @@ import sirv from "sirv";
 import { readFile } from "fs/promises";
 import storage from "node-persist";
 import { json, urlencoded } from "milliparsec";
-import { timeStamp } from "console";
 
 await storage.init({
   dir: "server/data/scores",
@@ -135,6 +134,7 @@ app.get("/competitions/:id", async (req, res) => {
       title: league.name,
       competitionId: id,
       questions: selectedQuestions,
+      startAudio: true,
     })
   );
 });
