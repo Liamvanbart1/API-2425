@@ -1,211 +1,526 @@
 [
   {
-    "question": "Which team has the most points in the league?",
+    "question": "Which team finished in 3rd place?",
     "questionID": 1,
     "choices": [
       {
         "id": 1,
-        "text": "VfB Stuttgart",
-        "correct": false
-      },
-      {
-        "id": 2,
         "text": "Bayern Munich",
         "correct": false
       },
       {
+        "id": 2,
+        "text": "RB Leipzig",
+        "correct": false
+      },
+      {
         "id": 3,
+        "text": "Borussia Dortmund",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "How many points did VfB Stuttgart have?",
+    "questionID": 2,
+    "choices": [
+      {
+        "id": 4,
+        "text": "72 pts",
+        "correct": false
+      },
+      {
+        "id": 5,
+        "text": "65 pts",
+        "correct": false
+      },
+      {
+        "id": 6,
+        "text": "73 pts",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Which team played the most games?",
+    "questionID": 3,
+    "choices": [
+      {
+        "id": 7,
+        "text": "Borussia Monchengladbach",
+        "correct": false
+      },
+      {
+        "id": 8,
+        "text": "FC Heidenheim",
+        "correct": false
+      },
+      {
+        "id": 9,
         "text": "Bayer Leverkusen",
         "correct": true
       }
     ]
   },
   {
-    "question": "How many games did Borussia Dortmund play?",
-    "questionID": 2,
-    "choices": [
-      {
-        "id": 4,
-        "text": "32 games",
-        "correct": false
-      },
-      {
-        "id": 5,
-        "text": "33 games",
-        "correct": false
-      },
-      {
-        "id": 6,
-        "text": "34 games",
-        "correct": true
-      }
-    ]
-  },
-  {
-    "question": "Which team is in 5th place?",
-    "questionID": 3,
-    "choices": [
-      {
-        "id": 7,
-        "text": "Eintracht Frankfurt",
-        "correct": false
-      },
-      {
-        "id": 8,
-        "text": "Borussia Dortmund",
-        "correct": true
-      },
-      {
-        "id": 9,
-        "text": "FC Heidenheim",
-        "correct": false
-      }
-    ]
-  },
-  {
-    "question": "Who has the least points?",
+    "question": "Who had 42 points?",
     "questionID": 4,
     "choices": [
       {
         "id": 10,
-        "text": "FC Augsburg",
-        "correct": false
-      },
-      {
-        "id": 11,
-        "text": "Borussia Monchengladbach",
-        "correct": false
-      },
-      {
-        "id": 12,
-        "text": "SV Darmstadt 98",
-        "correct": true
-      }
-    ]
-  },
-  {
-    "question": "How many points does Werder Bremen have?",
-    "questionID": 5,
-    "choices": [
-      {
-        "id": 13,
-        "text": "40 pts",
-        "correct": false
-      },
-      {
-        "id": 14,
-        "text": "42 pts",
-        "correct": true
-      },
-      {
-        "id": 15,
-        "text": "44 pts",
-        "correct": false
-      }
-    ]
-  },
-  {
-    "question": "Which team won the most games?",
-    "questionID": 6,
-    "choices": [
-      {
-        "id": 16,
-        "text": "1899 Hoffenheim",
-        "correct": false
-      },
-      {
-        "id": 17,
-        "text": "Bayern Munich",
-        "correct": false
-      },
-      {
-        "id": 18,
-        "text": "RB Leipzig",
-        "correct": true
-      }
-    ]
-  },
-  {
-    "question": "How many games did 1.FC Köln win?",
-    "questionID": 7,
-    "choices": [
-      {
-        "id": 19,
-        "text": "8 games",
-        "correct": false
-      },
-      {
-        "id": 20,
-        "text": "9 games",
-        "correct": false
-      },
-      {
-        "id": 21,
-        "text": "10 games",
-        "correct": true
-      }
-    ]
-  },
-  {
-    "question": "Who is in 9th place?",
-    "questionID": 8,
-    "choices": [
-      {
-        "id": 22,
-        "text": "FC Heidenheim",
-        "correct": false
-      },
-      {
-        "id": 23,
         "text": "Werder Bremen",
         "correct": true
       },
       {
-        "id": 24,
+        "id": 11,
+        "text": "FC Augsburg",
+        "correct": false
+      },
+      {
+        "id": 12,
         "text": "SC Freiburg",
         "correct": false
       }
     ]
   },
   {
-    "question": "Which team played the least number of games?",
-    "questionID": 9,
+    "question": "Which team finished in 15th place?",
+    "questionID": 5,
     "choices": [
       {
-        "id": 25,
-        "text": "FC Heidenheim",
+        "id": 13,
+        "text": "Vfl Bochum",
         "correct": false
       },
       {
-        "id": 26,
-        "text": "VfL Wolfsburg",
-        "correct": false
-      },
-      {
-        "id": 27,
+        "id": 14,
         "text": "SV Darmstadt 98",
+        "correct": false
+      },
+      {
+        "id": 15,
+        "text": "Union Berlin",
         "correct": true
       }
     ]
   },
   {
-    "question": "Who is in 15th place?",
+    "question": "How many wins did Bayern Munich have?",
+    "questionID": 6,
+    "choices": [
+      {
+        "id": 16,
+        "text": "28 wins",
+        "correct": false
+      },
+      {
+        "id": 17,
+        "text": "22 wins",
+        "correct": true
+      },
+      {
+        "id": 18,
+        "text": "24 wins",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which team finished in 10th place?",
+    "questionID": 7,
+    "choices": [
+      {
+        "id": 19,
+        "text": "FC Augsburg",
+        "correct": false
+      },
+      {
+        "id": 20,
+        "text": "SC Freiburg",
+        "correct": true
+      },
+      {
+        "id": 21,
+        "text": "Werder Bremen",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "How many points did Borussia Monchengladbach have?",
+    "questionID": 8,
+    "choices": [
+      {
+        "id": 22,
+        "text": "35 pts",
+        "correct": false
+      },
+      {
+        "id": 23,
+        "text": "34 pts",
+        "correct": true
+      },
+      {
+        "id": 24,
+        "text": "37 pts",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who had 46 points?",
+    "questionID": 9,
+    "choices": [
+      {
+        "id": 25,
+        "text": "1899 Hoffenheim",
+        "correct": true
+      },
+      {
+        "id": 26,
+        "text": "Eintracht Frankfurt",
+        "correct": false
+      },
+      {
+        "id": 27,
+        "text": "FC Heidenheim",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which team had 34 games played?",
     "questionID": 10,
     "choices": [
       {
         "id": 28,
-        "text": "Union Berlin",
-        "correct": true
+        "text": "SV Darmstadt 98",
+        "correct": false
       },
       {
         "id": 29,
+        "text": "Borussia Monchengladbach",
+        "correct": true
+      },
+      {
+        "id": 30,
+        "text": "VfL Wolfsburg",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who finished in 8th place?",
+    "questionID": 11,
+    "choices": [
+      {
+        "id": 31,
+        "text": "FC Heidenheim",
+        "correct": true
+      },
+      {
+        "id": 32,
+        "text": "1899 Hoffenheim",
+        "correct": false
+      },
+      {
+        "id": 33,
+        "text": "Werder Bremen",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "How many wins did FC Augsburg have?",
+    "questionID": 12,
+    "choices": [
+      {
+        "id": 34,
+        "text": "9 wins",
+        "correct": false
+      },
+      {
+        "id": 35,
+        "text": "11 wins",
+        "correct": false
+      },
+      {
+        "id": 36,
+        "text": "10 wins",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Which team had 37 points?",
+    "questionID": 13,
+    "choices": [
+      {
+        "id": 37,
+        "text": "VfL Wolfsburg",
+        "correct": true
+      },
+      {
+        "id": 38,
+        "text": "FSV Mainz 05",
+        "correct": false
+      },
+      {
+        "id": 39,
+        "text": "Borussia Monchengladbach",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who played 31 games?",
+    "questionID": 14,
+    "choices": [
+      {
+        "id": 40,
         "text": "Vfl Bochum",
         "correct": false
       },
       {
-        "id": 30,
+        "id": 41,
+        "text": "1.FC Köln",
+        "correct": true
+      },
+      {
+        "id": 42,
+        "text": "SV Darmstadt 98",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which team finished in 14th place?",
+    "questionID": 15,
+    "choices": [
+      {
+        "id": 43,
+        "text": "SV Darmstadt 98",
+        "correct": false
+      },
+      {
+        "id": 44,
+        "text": "Borussia Monchengladbach",
+        "correct": false
+      },
+      {
+        "id": 45,
+        "text": "Union Berlin",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "How many points did SC Freiburg have?",
+    "questionID": 16,
+    "choices": [
+      {
+        "id": 46,
+        "text": "42 pts",
+        "correct": true
+      },
+      {
+        "id": 47,
+        "text": "39 pts",
+        "correct": false
+      },
+      {
+        "id": 48,
+        "text": "37 pts",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who had 17 points?",
+    "questionID": 17,
+    "choices": [
+      {
+        "id": 49,
+        "text": "FC Augsburg",
+        "correct": false
+      },
+      {
+        "id": 50,
+        "text": "SV Darmstadt 98",
+        "correct": true
+      },
+      {
+        "id": 51,
+        "text": "Vfl Bochum",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which team had 24 wins?",
+    "questionID": 18,
+    "choices": [
+      {
+        "id": 52,
+        "text": "FC Augsburg",
+        "correct": false
+      },
+      {
+        "id": 53,
         "text": "1.FC Köln",
         "correct": false
+      },
+      {
+        "id": 54,
+        "text": "Bayern Munich",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Who finished in 13th place?",
+    "questionID": 19,
+    "choices": [
+      {
+        "id": 55,
+        "text": "FSV Mainz 05",
+        "correct": true
+      },
+      {
+        "id": 56,
+        "text": "Borussia Monchengladbach",
+        "correct": false
+      },
+      {
+        "id": 57,
+        "text": "Union Berlin",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "How many games did Vfl Bochum play?",
+    "questionID": 20,
+    "choices": [
+      {
+        "id": 58,
+        "text": "31 games",
+        "correct": false
+      },
+      {
+        "id": 59,
+        "text": "34 games",
+        "correct": false
+      },
+      {
+        "id": 60,
+        "text": "33 games",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Which team had 90 points?",
+    "questionID": 21,
+    "choices": [
+      {
+        "id": 61,
+        "text": "Borussia Monchengladbach",
+        "correct": false
+      },
+      {
+        "id": 62,
+        "text": "VfB Stuttgart",
+        "correct": false
+      },
+      {
+        "id": 63,
+        "text": "Bayer Leverkusen",
+        "correct": true
+      }
+    ]
+  },
+  {
+    "question": "Who had 33 pts?",
+    "questionID": 22,
+    "choices": [
+      {
+        "id": 64,
+        "text": "Union Berlin",
+        "correct": true
+      },
+      {
+        "id": 65,
+        "text": "Vfl Bochum",
+        "correct": false
+      },
+      {
+        "id": 66,
+        "text": "1.FC Köln",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which team finished in 11th place?",
+    "questionID": 23,
+    "choices": [
+      {
+        "id": 67,
+        "text": "FC Augsburg",
+        "correct": true
+      },
+      {
+        "id": 68,
+        "text": "VfL Wolfsburg",
+        "correct": false
+      },
+      {
+        "id": 69,
+        "text": "FSV Mainz 05",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "How many wins did Eintracht Frankfurt have?",
+    "questionID": 24,
+    "choices": [
+      {
+        "id": 70,
+        "text": "16 wins",
+        "correct": false
+      },
+      {
+        "id": 71,
+        "text": "14 wins",
+        "correct": true
+      },
+      {
+        "id": 72,
+        "text": "12 wins",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who finished in 9th place?",
+    "questionID": 25,
+    "choices": [
+      {
+        "id": 73,
+        "text": "FC Heidenheim",
+        "correct": false
+      },
+      {
+        "id": 74,
+        "text": "Werder Bremen",
+        "correct": false
+      },
+      {
+        "id": 75,
+        "text": "SC Freiburg",
+        "correct": true
       }
     ]
   }

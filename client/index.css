@@ -20,11 +20,19 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   height: 100vh;
-  display: grid;
 }
 
 main {
   padding: 1rem;
   gap: 1em;
   display: grid;
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.5s;
 }

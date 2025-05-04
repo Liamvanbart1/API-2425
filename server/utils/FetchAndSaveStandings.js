@@ -4,7 +4,7 @@ import { writeFile } from "fs/promises";
 import path from "path";
 
 const getFootballstandings = async () => {
-  const id = 39;
+  const id = 78;
   const key = process.env.API_KEY;
   const baseUrl = process.env.BASE_URL;
 

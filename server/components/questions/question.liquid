@@ -1,55 +1,27 @@
 <h1>{{ title }} Quiz</h1>
+
 <form id="quiz-form" action="/submit-quiz/{{ competitionId }}" method="POST">
-  <div>
+  <div class="user-input">
     <label for="userName">Enter Your Name:</label>
     <input type="text" id="userName" name="userId" required />
   </div>
+
   <button id="startButton" type="button">Start Quiz</button>
 
-  <div id="quiz-questions" style="display: none;">
+  <div id="quiz-questions" class="hidden">
     {% for question in questions %}
-    <div class="quiz-question" style="display: none;">
+    <div class="quiz-question question-block">
       <h2>{{ question.question }}</h2>
       {% for choice in question.choices %}
-      <div>
-        <input type="radio" id="q{{ question.questionID }}_{{ choice.id }}" name="question{{ question.questionID }}"
-          value="{{ choice.text }}">
-        <label for="q{{ question.questionID }}_{{ choice.id }}">{{ choice.text }}</label>
-      </div>
+      <label class="choice-label">
+        <input type="radio" name="question{{ question.questionID }}" value="{{ choice.text }}" />
+        <span>{{ choice.text }}</span>
+      </label>
       {% endfor %}
     </div>
     {% endfor %}
   </div>
 
-  <button id="nextButton" type="button" style="display: none;">Next Question</button>
-  <button type="submit" style="display: none;">Submit</button>
+  <button id="nextButton" type="button" class="hidden">Next Question</button>
+  <button type="submit" class="hidden">Submit</button>
 </form>
-
-<script>
-  document.getElementById('startButton').addEventListener('click', function () {
-    document.getElementById('startButton').style.display = 'none';
-    document.getElementById('quiz-questions').style.display = 'block';
-    showQuestion(0);
-  });
-
-  let currentQuestion = 0;
-  const questions = document.querySelectorAll('.quiz-question');
-
-  document.getElementById('nextButton').addEventListener('click', function () {
-    if (currentQuestion < questions.length - 1) {
-      questions[currentQuestion].style.display = 'none';
-      currentQuestion++;
-      showQuestion(currentQuestion);
-    } else {
-      document.querySelector('button[type="submit"]').style.display = 'inline-block';
-      document.getElementById('nextButton').style.display = 'none';
-    }
-  });
-
-  function showQuestion(index) {
-    questions[index].style.display = 'block';
-    if (index < questions.length - 1) {
-      document.getElementById('nextButton').style.display = 'inline-block';
-    }
-  }
-</script>
