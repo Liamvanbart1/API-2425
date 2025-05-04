@@ -3,36 +3,47 @@
 {% block content %}
 <div class="quiz-results-container">
   <h1 class="quiz-results-title">Quiz Results</h1>
-  <p class="quiz-score">Your Score: <span>{{ score }}</span> / <span>{{ total }}</span></p>
-
-  <div class="toggle-all">
-    <button type="button" class="button">Show All Answers</button>
-  </div>
-
-  <div class="qcontainer">
-    <ul class="results-list">
-      {% for result in results %}
-      <li class="result-item {% if result.isCorrect %}correct{% else %}incorrect{% endif %}">
-        <div class="result-header">
-          <div class="question">
-            <strong>Question {{ forloop.index }}:</strong> {{ result.question }}
+  <p class="quiz-score">{{ userId }} your Score is: <span>{{ score }}</span> / <span>{{ total }}</span></p>
+  {% if score <= 10 %} <p class="score-message">Oof! That was rough. Did you even watch football in 2023? </p>
+    {% elsif score <= 17 %} <p class="score-message">Not bad! You're getting there, maybe just one more season of Match
+      of the Day.</p>
+      {% elsif score <= 22 %} <p class="score-message">Solid! You've clearly been paying attention. Almost pundit level.
+        </p>
+        {% elsif score <= 24 %} <p class="score-message">Wow! You're a football encyclopedia. Just missed perfection!
+          </p>
+          {% elsif score == 25 %}
+          <p class="score-message">Legendary! Are you secretly a football commentator? Or Did you feed all the questions
+            into Chatgpt?</p>
+          {% endif %}
+          <div class="toggle-all">
+            <button type="button" class="button">Show All Answers</button>
           </div>
-          <div class="result-status">
-            {% if result.isCorrect %} Correct{% else %} Incorrect{% endif %}
+          <div class="qcontainer">
+            <ul class="results-list">
+              {% for result in results %}
+              <li class="result-item {% if result.isCorrect %}correct{% else %}incorrect{% endif %}">
+                <div class="result-header">
+                  <div class="question">
+                    <strong>Question {{ forloop.index }}:</strong> {{ result.question }}
+                  </div>
+                  <div class="result-status">
+                    {% if result.isCorrect %} Correct{% else %} Incorrect{% endif %}
+                  </div>
+                </div>
+                <div class="answer-details">
+                  <div class="answers">
+                    <p>Your answer: <span class="user-answer">{{ result.userAnswer | default: "Why did you not even
+                        enter anything?"
+                        }}</span></p>
+                    <p>Correct answer: <span class="correct-answer">{{ result.correctAnswer }}</span></p>
+                  </div>
+                </div>
+              </li>
+              {% endfor %}
+            </ul>
           </div>
-        </div>
-        <div class="answer-details">
-          <div class="answers">
-            <p>Your answer: <span class="user-answer">{{ result.userAnswer | default: "No answer provided" }}</span></p>
-            <p>Correct answer: <span class="correct-answer">{{ result.correctAnswer }}</span></p>
-          </div>
-        </div>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
 
-  <a href="/" class="button">Back to Home</a>
+          <a href="/" class="button">Back to Home</a>
 </div>
 
 {% endblock %}

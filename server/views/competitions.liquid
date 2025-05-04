@@ -16,6 +16,9 @@
           Ready to prove your {{ title }} knowledge? Good luck!
         </p>
       </li>
+      <li>
+        <h2>Tip: Turn on your sound for more fun!</h2>
+      </li>
     </ul>
     <div class="image-container">
       <img src="https://media.api-sports.io/football/leagues/{{ league.id }}.png" alt="{{ league.name }} logo"
@@ -30,5 +33,6 @@
   </div>
   {% render '../components/questions/question.liquid', questions:questions, competitionId: competitionId %}
 </div>
+<a href="/" class="button">Back to Home</a>
 
 {% endblock %}

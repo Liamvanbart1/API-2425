@@ -97,7 +97,6 @@ const startTimer = () => {
   }, 1000);
 };
 
-// Question Navigation
 const showQuestion = (index) => {
   questions.forEach((question) => question.classList.remove("show"));
   if (questions[index]) questions[index].classList.add("show");

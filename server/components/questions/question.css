@@ -1,9 +1,9 @@
 .quiz-container {
   margin: 2rem auto;
   padding: 1.5rem;
-  background-color: #f9f9f9;
+  background-color: var(--background-light);
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px var(--shadow-color);
 }
 
 .user-input {
@@ -20,7 +20,7 @@
   width: 100%;
   padding: 0.8rem;
   font-size: 1rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--input-border);
   border-radius: 6px;
   box-sizing: border-box;
 }
@@ -28,22 +28,22 @@
 .question-block {
   margin-bottom: 2rem;
   padding: 1rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--input-border);
   border-radius: 10px;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .question-block h2 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
-  color: #333;
+  color: var(--heading-color);
 }
 
 .choice-label {
   display: block;
   padding: 0.8rem 1rem;
   margin-bottom: 0.5rem;
-  background-color: #f2f2f2;
+  background-color: var(--choice-bg);
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.2s ease;
@@ -51,7 +51,7 @@
 }
 
 .choice-label:hover {
-  background-color: #e0e0e0;
+  background-color: var(--choice-hover);
 }
 
 .choice-label input[type="radio"] {
@@ -59,7 +59,7 @@
 }
 
 .choice-label input[type="radio"]:checked + span {
-  background-color: #d0e8ff;
+  background-color: var(--choice-selected);
   font-weight: bold;
   display: block;
   padding: 0.2rem 0;
@@ -81,7 +81,7 @@
 }
 
 #startButton:disabled {
-  background-color: #ccc;
+  background-color: var(--disabled-bg);
   cursor: not-allowed;
 }
 
@@ -118,8 +118,8 @@
 .quiz-results-container {
   margin: 0 auto;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: var(--background-light);
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px var(--shadow-color);
   max-height: 80vh;
 }

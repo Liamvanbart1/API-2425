@@ -2,9 +2,9 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: var(--background-light);
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px var(--shadow-color);
   max-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -23,10 +23,10 @@
 }
 
 .result-item {
-  background-color: #fff;
+  background-color: var(--white);
   margin: 0.5rem 0;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px var(--light-shadow);
   transition: all 0.3s ease;
 }
 
@@ -36,11 +36,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f8f9fa;
+  background-color: var(--grey-light);
 }
 
 .result-item:hover .result-header {
-  background-color: #f1f3f5;
+  background-color: var(--grey-lighter);
 }
 
 .question {
@@ -57,13 +57,13 @@
 }
 
 .correct .result-status {
-  background-color: #d4edda;
-  color: #155724;
+  background-color: var(--success-bg);
+  color: var(--success-text);
 }
 
 .incorrect .result-status {
-  background-color: #f8d7da;
-  color: #721c24;
+  background-color: var(--error-bg);
+  color: var(--error-text);
 }
 
 .answer-details {
@@ -84,17 +84,17 @@
 }
 
 .user-answer {
-  color: #dc3545;
+  color: var(--error-text);
 }
 
 .correct-answer {
-  color: #28a745;
+  color: var(--success-text);
 }
 
 .toggle-all {
   position: sticky;
   top: 0;
-  background: #f9f9f9;
+  background: var(--background-light);
   padding: 1rem 0;
   z-index: 1;
 }
@@ -102,8 +102,8 @@
 .toggle-all-button {
   width: 100%;
   padding: 0.75rem;
-  background: #007bff;
-  color: white;
+  background: var(--primary);
+  color: var(--white);
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -111,5 +111,17 @@
 }
 
 .toggle-all-button:hover {
-  background: #0056b3;
+  background: var(--primary-dark);
+}
+
+.score-message {
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  background-color: var(--highlight-bg);
+  border-left: 6px solid var(--highlight-border);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow-color);
+  font-style: italic;
+  color: var(--text);
 }

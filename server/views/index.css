@@ -1,3 +1,35 @@
+:root {
+  --base-color: #2e3532;
+  --second-color: #d9d9d9;
+  --text-color: #cc6048;
+  --white: #ffffff;
+  --background-light: #f9f9f9;
+  --grey-light: #f8f9fa;
+  --grey-lighter: #f1f3f5;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --light-shadow: rgba(0, 0, 0, 0.05);
+  --primary: #007bff;
+  --primary-dark: #0056b3;
+  --success-bg: #d4edda;
+  --success-text: #28a745;
+  --error-bg: #f8d7da;
+  --error-text: #dc3545;
+  --highlight-bg: #fff8e1;
+  --highlight-border: #ffc107;
+  --text: #444;
+  --hero-overlay: rgba(0, 0, 0, 0.4);
+  --border-light: #eee;
+  --row-hover: #f1f1f1;
+  --progress-bg: #ddd;
+  --progress-fill: #4caf50;
+  --medium-shadow: rgba(0, 0, 0, 0.2);
+  --input-border: #ddd;
+  --heading-color: #333;
+  --choice-bg: #f2f2f2;
+  --choice-hover: #e0e0e0;
+  --choice-selected: #d0e8ff;
+  --disabled-bg: #ccc;
+}
 .grid {
   display: grid;
   gap: 1rem;
@@ -21,11 +53,6 @@
   flex-direction: column;
   gap: 1em;
 }
-:root {
-  --base-color: #2e3532;
-  --second-color: #d9d9d9;
-  --text-color: #cc6048;
-}
 
 body {
   background-color: var(--base-color);
@@ -47,7 +74,7 @@ p {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: var(--hero-overlay);
   z-index: 0;
 }
 
@@ -95,7 +122,7 @@ button {
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px var(--shadow-color);
   width: 50%;
 }
 
@@ -113,7 +140,7 @@ button:hover {
   width: 100%;
   border-collapse: collapse;
   background-color: var(--second-color);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 8px var(--light-shadow);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -122,7 +149,7 @@ button:hover {
 .score-table td {
   padding: 0.75rem 1rem;
   text-align: left;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--border-light);
 }
 
 .score-table th {
@@ -133,5 +160,5 @@ button:hover {
 }
 
 .score-table tbody tr:hover {
-  background-color: #f1f1f1;
+  background-color: var(--row-hover);
 }
