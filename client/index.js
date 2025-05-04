@@ -1,15 +1,13 @@
 import "./index.css";
 
-// Quiz Page Functionality
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 let tickingSoundBuffer = null;
 let tickingSource = null;
 let buzzerSound = null;
 let timerInterval = null;
-let timeLeft = 10;
+let timeLeft = 60;
 let currentQuestion = 0;
 
-// DOM Elements
 const timerDisplay = document.getElementById("timer");
 const progressBar = document.querySelector(".progress-bar");
 const startButton = document.getElementById("startButton");
@@ -20,7 +18,6 @@ const submitButton = document.querySelector('button[type="submit"]');
 const quizQuestions = document.getElementById("quiz-questions");
 const questions = document.querySelectorAll(".quiz-question");
 
-// Quiz Initialization
 if (quizForm) {
   quizForm.addEventListener("keydown", (event) => {
     if (event.key === "Enter") event.preventDefault();
@@ -34,7 +31,6 @@ if (userNameInput && startButton) {
   });
 }
 
-// Audio Functions
 const loadAudio = async (url) => {
   const response = await fetch(url);
   const arrayBuffer = await response.arrayBuffer();
@@ -74,7 +70,6 @@ const playBuzzer = async () => {
   source.start();
 };
 
-// Timer Functions
 const startTimer = () => {
   const totalTime = timeLeft;
   timerInterval = setInterval(async () => {
@@ -114,7 +109,6 @@ const showQuestion = (index) => {
   }
 };
 
-// Event Listeners
 document.addEventListener("DOMContentLoaded", () => {
   if (startButton) {
     startButton.addEventListener("click", async () => {

@@ -19,3 +19,24 @@
   background-color: #4caf50;
   transition: width 1s linear;
 }
+
+.question-counter {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.intro {
+  background-color: var(--second-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.intromid {
+  display: flex;
+  gap: 0.5em;
+}

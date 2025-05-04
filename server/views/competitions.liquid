@@ -1,11 +1,26 @@
 {% layout "server/layouts/base.liquid" %}
 
 {% block content %}
-<div>
-  <h1>{{ title }}</h1>
-  <div class="image-container">
-    <img src="https://media.api-sports.io/football/leagues/{{ league.id }}.png" alt="{{ league.name }} logo"
-      style="vt-league: logo-{{ league.id }}" />
+<div class="intro">
+  <h1>{{ title }} Quiz</h1>
+  <div class="intromid">
+    <ul>
+      <li>
+        <h2>You chose {{ title }}</h2>
+      </li>
+      <li>
+        <p>
+          Welcome to the ultimate {{ title }} quiz based on the 2023 season!
+          You’ll face 25 football-related questions and have just 60 seconds to answer them all.
+          Before you begin, make sure to enter your name — your score will be saved alongside it on the leaderboard.
+          Ready to prove your {{ title }} knowledge? Good luck!
+        </p>
+      </li>
+    </ul>
+    <div class="image-container">
+      <img src="https://media.api-sports.io/football/leagues/{{ league.id }}.png" alt="{{ league.name }} logo"
+        style="view-transition-name: logo-{{ league.id }}" />
+    </div>
   </div>
 </div>
 <div class=" qcontainer">
