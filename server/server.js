@@ -126,7 +126,7 @@ app.get("/competitions/:id", async (req, res) => {
   }
 
   const shuffledQuestions = quizQuestions.sort(() => 0.5 - Math.random());
-  const selectedQuestions = shuffledQuestions.slice(0, 10);
+  const selectedQuestions = shuffledQuestions.slice(0, 25);
   // console.log(selectedQuestions); dit was voor debugging
 
   return res.send(
@@ -135,6 +135,7 @@ app.get("/competitions/:id", async (req, res) => {
       competitionId: id,
       questions: selectedQuestions,
       startAudio: false,
+      league: league,
     })
   );
 });

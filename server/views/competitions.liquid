@@ -1,16 +1,18 @@
 {% layout "server/layouts/base.liquid" %}
 
 {% block content %}
-<h1>{{ title }}</h1>
-<button id="startButton">Start Quiz</button>
+<div>
+  <h1>{{ title }}</h1>
+  <div class="image-container">
+    <img src="https://media.api-sports.io/football/leagues/{{ league.id }}.png" alt="{{ league.name }} logo" />
+  </div>
+</div>
 <div class="qcontainer">
-  {% render '../components/questions/question.liquid', questions:questions, competitionId: competitionId %}
-
   <div id="timer" style="font-size: 24px; font-weight: bold;"></div>
-
   <div class="progress-container">
     <div class="progress-bar"></div>
   </div>
-
+  {% render '../components/questions/question.liquid', questions:questions, competitionId: competitionId %}
 </div>
+
 {% endblock %}

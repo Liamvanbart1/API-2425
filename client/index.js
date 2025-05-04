@@ -6,12 +6,29 @@ let tickingSoundBuffer = null;
 let tickingSource = null;
 let buzzerSound = null;
 let timerInterval = null;
-let timeLeft = 30;
+let timeLeft = 60;
 
 const timerDisplay = document.getElementById("timer");
 const progressBar = document.querySelector(".progress-bar");
 const startButton = document.getElementById("startButton");
 const quizForm = document.getElementById("quiz-form");
+const userNameInput = document.getElementById("userName");
+
+if (quizForm) {
+  quizForm.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+    }
+  });
+}
+
+if (userNameInput && startButton) {
+  startButton.disabled = true;
+
+  userNameInput.addEventListener("input", () => {
+    startButton.disabled = userNameInput.value.trim() === "";
+  });
+}
 
 const loadTickingSound = async () => {
   const response = await fetch("/audio/klok.mp3");

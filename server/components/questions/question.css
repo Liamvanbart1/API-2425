@@ -58,3 +58,46 @@
 .choice-label input[type="radio"] {
   accent-color: #007bff;
 }
+
+#startButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.input-container {
+  position: relative;
+}
+
+.tooltip-text {
+  font-size: 14px;
+  color: #f44336;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#startButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#startButton:enabled {
+  cursor: pointer;
+}
+
+.tooltip-text.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-20px);
+}
+
+.tooltip-text.disappear {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
