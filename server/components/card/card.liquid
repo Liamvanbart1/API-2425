@@ -1,13 +1,13 @@
 <li class="card">
   <div class="image-container">
     <img src="https://media.api-sports.io/football/leagues/{{ league.id }}.png" alt="{{ league.name }} logo"
-      style="view-transition-name: logo-{{ league.id }}" />
+      style="vt-league: logo-{{ league.id }}" />
   </div>
   <div class="content">
     <h2>{{ league.name }}</h2>
     <p>{{ league.description }}</p>
     <p>{{ league.funFact }}</p>
-    <a href="/competitions/{{ league.id }}" class="button" style="view-transition-name: btn-{{ league.id }};">Begin
+    <a href="/competitions/{{ league.id }}" class="button">Begin
       Quiz</a>
   </div>
 </li>
