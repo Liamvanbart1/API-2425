@@ -134,7 +134,7 @@ app.get("/competitions/:id", async (req, res) => {
       title: league.name,
       competitionId: id,
       questions: selectedQuestions,
-      startAudio: true,
+      startAudio: false,
     })
   );
 });

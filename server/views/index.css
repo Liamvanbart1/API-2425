@@ -4,6 +4,18 @@
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
+.mid {
+  display: flex;
+  gap: 1em;
+  flex-direction: row;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
 .flex {
   display: flex;
   flex-direction: column;
@@ -93,16 +105,14 @@ button:hover {
   border-color: var(--second-color);
 }
 
-.scoreboard {
-  background-color: white;
+.scores {
+  width: 50%;
 }
 
 .score-table {
-  width: 50%;
+  width: 100%;
   border-collapse: collapse;
-  margin-top: 1rem;
-  font-family: sans-serif;
-  background-color: #fff;
+  background-color: var(--second-color);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
   overflow: hidden;
@@ -116,11 +126,10 @@ button:hover {
 }
 
 .score-table th {
-  background-color: #f9f9f9;
+  background-color: var(--second-color);
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.85rem;
-  color: #555;
 }
 
 .score-table tbody tr:hover {

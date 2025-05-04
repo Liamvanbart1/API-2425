@@ -3,7 +3,7 @@
 {% block content %}
 <div class="hero-container">
   <div class="hero">
-    <ul>
+    <ul class="list">
       <li>
         <p>WELCOME TO</p>
       </li>
@@ -13,39 +13,45 @@
       <li>
         <p>Are you ready to test your football knowledge?</p>
       </li>
-      {% comment %} <li><button id="toggleButton">Yes!</button></li> {% endcomment %}
-      <li><a href="#scroll" id="toggleButton">Yes!</a></li>
+      <li><a href="#scroll" class="button">Yes!</a></li>
 
     </ul>
     <img src="/images/arsenal.jpg" alt="Arsenal" class="hero-image">
     {% comment %} https://unsplash.com/photos/a-crowd-of-people-in-a-stadium-LbT_j62t94U {% endcomment %}
   </div>
 </div>
-<div id="scroll" class="competitions">
-  <h2>Which of these competitions do you have the most knowledge about?</h2>
-  <ul class="flex">
-    {% for league in leagues %}
-    {% render "../components/card/card.liquid", league: league %}
-    {% endfor %}
-  </ul>
-</div>
-<div class="scores">
-  <table class="score-table">
-    <thead>
-      <tr>
-        <th>User</th>
-        <th>Score</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for score in topScores %}
-      <tr>
-        <td class="username">{{ score.userId }}</td>
-        <td class="score">{{ score.score }} points</td>
-        {% comment %}<td>{{ score.date }}</td>{% endcomment %}
-      </tr>
+<div class="mid">
+  <div id="scroll" class="competitions">
+    <h2>Which of these competitions do you have the most knowledge about?</h2>
+    <ul class="flex">
+      {% for league in leagues %}
+      {% render "../components/card/card.liquid", league: league %}
       {% endfor %}
-    </tbody>
-  </table>
+    </ul>
+  </div>
+  <div class="scores">
+    <h2>All the high scores will show up here are you ready for the challenge?</h2>
+    {% if topScores.size > 0 %}
+    <table class="score-table">
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for score in topScores %}
+        <tr>
+          <td class="username">{{ score.userId }}</td>
+          <td class="score">{{ score.score }} points out of 25</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+    <p>No scores yet. Be the first to play!</p>
+    {% endif %}
+    </table>
+  </div>
 </div>
 {% endblock %}
