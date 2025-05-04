@@ -39,10 +39,10 @@ De View Transition API heb ik toegevoegd om de overgangen tussen pagina’s te v
 Daarnaast heb ik audio toegevoegd om de quiz leuker te maken: een tikkend geluid tijdens de quiz en een buzzer-geluid wanneer de tijd is verstreken. Als de tijd afloopt, verschijnt er een melding (alert) en wordt de quiz automatisch ingediend.
 
 In Liquid heb ik een `if`-statement toegevoegd die "No scores yet. Be the first to play!" weergeeft als er nog geen scores zijn. Als er wél scores zijn, worden deze weergegeven in een tabel.
+Ook laat ik, op basis van het resultaat, met een `if`-statement een bericht zien dat past bij je score. 
 <br>
 <img src="./client/public/images/leaderboard1.png" width="400"><br>
 <img src="./client/public/images/leaderboard.png" width="400"><br>
 
 <img src="./client/public/images/resultaat.png" width="400"><br>
 <img src="./client/public/images/resultaat1.png" width="400"><br>
-Ook laat ik, op basis van het resultaat, met een `if`-statement een bericht zien dat past bij je score. Ik denk dat ik nu minimaal een 8 verdien ;).
